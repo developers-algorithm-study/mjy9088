@@ -1,6 +1,7 @@
 #include <iostream>
 
-char *star = (char *)((size_t) "                                                                                                  *" + 98);
+char *star = (char *)((size_t) "                                       "
+	"                                                           *" + 98);
 
 int nextInt()
 {

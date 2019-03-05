@@ -3,7 +3,8 @@
 int main(int argc, char **argv)
 {
 	int N, K, i, j;
-	char *star = "                                                                                                  *" + 98;
+	char *star = "                                                "
+		"                                                  *" + 98;
 	scanf("%d %d", &N, &K);
 	if(N == 1)
 	{
