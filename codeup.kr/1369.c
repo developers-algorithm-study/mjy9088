@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	{
 		for(j = 0; j <= N; j++)
 		{
-			int tmp = K - (i + j + K - 1) % K - 1;
+			int tmp = K - (i + j + 2) % K - 1;
 			j += tmp;
 			if(j > N) tmp -= j - N;
 			printf("%s", test - tmp);
