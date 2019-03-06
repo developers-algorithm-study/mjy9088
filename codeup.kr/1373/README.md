@@ -1,6 +1,6 @@
 # 좌표 이동
 
-[1373](http://codeup.kr/problem.php?id=1373)
+[1373](http://codeup.kr/problem.php?id=1373), [해설](comment.md)
 
 시간 제한: 1 Sec 
 
