@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	}
 	else if(!M && N == 2)
 	{
-		printf("4 %d", P ? (K ? 2 : 2) % P : K ? 2 : 2);
+		printf("4 %d", P ? 2 % P : 2);
 	}
 	else if(!M)
 	{
