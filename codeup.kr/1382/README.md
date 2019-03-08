@@ -2,7 +2,7 @@
 
 [1382](http://codeup.kr/problem.php?id=1382)
 
-시간 제한: 1 Sec 
+시간 제한: 1 Sec
 
 메모리 제한: 128 MB
 
