@@ -1,6 +1,6 @@
 # n개의 수 중 5의 배수의 합
 
-[1512](http://codeup.kr/problem.php?id=1512)
+[1267](http://codeup.kr/problem.php?id=1267)
 
 시간 제한: 1 Sec
 
