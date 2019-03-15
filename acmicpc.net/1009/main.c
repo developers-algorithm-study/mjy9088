@@ -12,7 +12,7 @@ int solve(int a, int b)
 	}
 	else
 	{
-		return b ? solve(a * a % 10, b / 2) % 10 : 1;
+		return b ? solve((a * a) % 10, b / 2) % 10 : 1;
 	}
 }
 
