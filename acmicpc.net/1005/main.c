@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct _tagR
 {
@@ -36,8 +37,8 @@ int main(int argc, char **argv)
 	for(i = 0; i < T; i++)
 	{
 		scanf("%d %d", &N, &K);
-		B arr[N];
-		R tmp[K];
+		B* arr = malloc(sizeof(B) * N);
+		R* tmp = malloc(sizeof(R) * K);
 		for(j = 0; j < N; j++)
 		{
 			scanf("%d", &arr[j].time);
@@ -52,6 +53,8 @@ int main(int argc, char **argv)
 		}
 		scanf("%d", &t);
 		printf("%d\n", solve(arr, t));
+		free(arr);
+		free(tmp);
 	}
 	return 0;
 }
