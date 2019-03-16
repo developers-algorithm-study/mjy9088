@@ -1,9 +1,11 @@
 N = int(input())
-arr = [[None] * N] * N
+arr = [None] * N
+for i in range(N):
+	arr[i] = [None] * N
 s = N
 c, x, y = 0, 0, 0
 while s:
-	c += 1;
+	c += 1
 	arr[y][x] = c
 	if s == 1:
 		break
