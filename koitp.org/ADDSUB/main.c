@@ -4,7 +4,7 @@ int main(int argc, char **argv)
 {
 	int N, tmp, i, j;
 	scanf("%d", &N);
-	long A[21], B[21], result = 0, *a = &A, *b = &B, *temp;
+	long A[21], B[21], result = 0, *a = A, *b = B, *temp;
 	if(!N)
 	{
 		printf("0\n");
