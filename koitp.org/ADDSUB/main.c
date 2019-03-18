@@ -4,7 +4,7 @@ int main(int argc, char **argv)
 {
 	int N, tmp, i, j;
 	scanf("%d", &N);
-	long a[21], b[21], result = 0;
+	long A[21], B[21], result = 0, *a = &A, *b = &B, *temp;
 	if(!N)
 	{
 		printf("0\n");
@@ -18,9 +18,11 @@ int main(int argc, char **argv)
 	a[tmp] = 1;
 	for(i = 2; i < N; i++)
 	{
+		temp = a;
+		a = b;
+		b = temp;
 		for(j = 0; j < 21; j++)
 		{
-			b[j] = a[j];
 			a[j] = 0;
 		}
 		scanf("%d", &tmp);
