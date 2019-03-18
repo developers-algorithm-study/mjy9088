@@ -6,7 +6,7 @@ public class source
 	{
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt(), tmp, i, j;
-		long a[] = new long[21], b[] = new long[21], result = 0, temp[];
+		long a[] = new long[21], b[] = new long[21], temp[];
 		if(N == 0)
 		{
 			System.out.println("0");
