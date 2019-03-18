@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 	int N, tmp, i, j;
 	std::cin >> N;
-	long A[21], B[21], result = 0, *a = A, *b = B;
+	long A[21], B[21], *a = A, *b = B;
 	if(!N)
 	{
 		std::cout << "0" << std::endl;
