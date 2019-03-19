@@ -15,7 +15,7 @@ public class Main
 		{
 			return;
 		}
-		int an[] = new int[452], ac[] = new int[452], bn[] = new int[339], bc[] = new int[339], len;
+		int an[] = new int[452], ac[] = new int[452], bn[] = new int[591], bc[] = new int[591], len;
 		len = an[0] = ac[0] = 1;
 		for(int i = 1; i < E; i++)
 		{
