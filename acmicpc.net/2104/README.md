@@ -2,7 +2,7 @@
 
 [2104](https://www.acmicpc.net/problem/2104)
 
-시간 제한: 1 Sec
+시간 제한: 1 초
 
 메모리 제한: 128 MB
 
