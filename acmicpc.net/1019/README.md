@@ -1,4 +1,4 @@
-# 다리 놓기
+# 책 페이지
 
 [1019](https://www.acmicpc.net/problem/1019)
 
