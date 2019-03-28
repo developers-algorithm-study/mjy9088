@@ -19,8 +19,8 @@ public class Main
 			int x = sc.nextInt() - 1, y = sc.nextInt() - 1;
 			for(int j = 0; j < 19; j++)
 			{
-				map[y][j] = map[y][j] == 1 ? 0 : 1;
-				map[j][x] = map[j][x] == 1 ? 0 : 1;
+				map[y][j] = 1 - map[y][j];
+				map[j][x] = 1 - map[j][x];
 			}
 		}
 		for(int i = 0; i < 19; i++)
