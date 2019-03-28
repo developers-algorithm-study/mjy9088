@@ -18,8 +18,8 @@ int main(int argc, char **argv)
 		y -= 1;
 		for(j = 0; j < 19; j++)
 		{
-			map[y][j] = !map[y][j];
-			map[j][x] = !map[j][x];
+			map[y][j] = 1 - map[y][j];
+			map[j][x] = 1 - map[j][x];
 		}
 	}
 	for(i = 0; i < 19; i++)
