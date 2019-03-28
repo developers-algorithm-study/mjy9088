@@ -2,7 +2,7 @@
 
 int main(int argc, char **argv)
 {
-	int W, H, i, j, k, result = 8;
+	int W, H, i, j, k, result = 64;
 	scanf("%d %d", &H, &W);
 	int tmp[H][W + 7];
 	char temp;
@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 			scanf(" %c", &temp);
 			for(k = 0; k < 8; k++)
 			{
-				if((i + k) % 2 == (temp ? 0 : 1))
+				if((i + k) % 2 == (temp == 'W' ? 0 : 1))
 				{
 					tmp[i][j + k]++;
 				}
@@ -26,21 +26,13 @@ int main(int argc, char **argv)
 	}
 	for(i = 0; i < H - 7; i++)
 	{
-		int w = 0, b = 0;
 		for(j = 7; j < W; j++)
 		{
-			for(k = 0; k < W; k++)
+			int w = 0, b = 0;
+			for(k = 0; k < 8; k++)
 			{
-				if(k % 2)
-				{
-					w += 8 - tmp[i][j - k];
-					b += tmp[i][j - k];
-				}
-				else
-				{
-					w += tmp[i][j - k];
-					b += 8 - tmp[i][j - k];
-				}
+				w += 8 - tmp[i + k][j];
+				b += tmp[i + k][j];
 			}
 			if(result > w)
 			{
