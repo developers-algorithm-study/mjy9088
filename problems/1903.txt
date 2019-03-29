@@ -51,17 +51,17 @@ https://leetcode.com/problems/reverse-integer/
 
 2019/03/20
 http://euler.synap.co.kr/prob_detail.php?id=1
-http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=322&sca=50
+http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=322
 https://leetcode.com/problems/longest-common-prefix/description/
 
 2019/03/21
-http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=336&sca=50 
+http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=336
 https://www.acmicpc.net/problem/1012
 https://leetcode.com/problems/implement-strstr
 
 2019/03/22
 http://codeup.kr/problem.php?id=1099
-http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=293&sca=50
+http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=293
 https://leetcode.com/problems/swap-nodes-in-pairs/description/
 
 2019/03/25
@@ -76,10 +76,15 @@ https://leetcode.com/problems/combination-sum/
 
 2019/03/27
 http://euler.synap.co.kr/prob_detail.php?id=2
-http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=304&sca=50
+http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=304
 https://leetcode.com/problems/valid-parentheses/description/
 
 2019/03/28
 http://codeup.kr/problem.php?id=1097
 https://www.acmicpc.net/problem/1018
 https://leetcode.com/problems/zigzag-conversion/description/
+
+2019/03/29
+https://www.acmicpc.net/problem/10172
+http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=942
+https://leetcode.com/problems/n-queens/
