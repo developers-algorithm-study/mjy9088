@@ -16,3 +16,12 @@ http://codeup.kr/problem.php?id=2102
 2019/04/04
 http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=992
 https://www.acmicpc.net/problem/1026
+
+2019/04/05
+http://codeup.kr/problem.php?id=1095
+https://leetcode.com/problems/merge-k-sorted-lists/description/
+
+2019/04/08
+https://www.acmicpc.net/problem/4108
+https://www.acmicpc.net/problem/9082
+https://www.acmicpc.net/problem/2140
