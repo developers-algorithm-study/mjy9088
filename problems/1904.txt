@@ -33,3 +33,15 @@ http://codeup.kr/problem.php?id=1128
 2019/04/10
 https://www.acmicpc.net/problem/9012
 https://www.acmicpc.net/problem/14503
+
+2019/04/11
+http://codeup.kr/problem.php?id=1495
+http://codeup.kr/problem.php?id=5244
+
+2019/04/12
+https://www.acmicpc.net/problem/1035
+https://leetcode.com/problems/powx-n/
+
+2019/04/15
+https://www.acmicpc.net/problem/11654
+https://www.acmicpc.net/problem/2309
