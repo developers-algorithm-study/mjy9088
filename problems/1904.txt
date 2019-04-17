@@ -49,3 +49,7 @@ https://www.acmicpc.net/problem/2309
 2019/04/16
 http://jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=294
 http://codeup.kr/problem.php?id=5247
+
+2019/04/17
+http://codeup.kr/problem.php?id=1928
+https://www.acmicpc.net/problem/1022
