@@ -53,3 +53,12 @@ http://codeup.kr/problem.php?id=5247
 2019/04/17
 http://codeup.kr/problem.php?id=1928
 https://www.acmicpc.net/problem/1022
+
+2019/04/18
+http://codeup.kr/problem.php?id=2767
+http://codeup.kr/problem.php?id=2653
+
+2019/04/19
+http://codeup.kr/problem.php?id=5248
+http://codeup.kr/problem.php?id=5225
+http://codeup.kr/problem.php?id=2768
