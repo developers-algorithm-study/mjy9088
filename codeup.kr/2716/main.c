@@ -17,14 +17,16 @@ int main(int argc, char **argv)
 		tmp[l++] = (frag){1, i};
 		for(j = 2; j < i; j++)
 		{
+			CONTINUE:
 			for(k = 2; k <= j; k++)
 			{
-				if(i % k || j % k)
+				if(i % k == 0 && j % k == 0)
 				{
-					tmp[l++] = (frag){j, i};
-					break;
+					j++;
+					goto CONTINUE;
 				}
 			}
+			tmp[l++] = (frag){j, i};
 		}
 	}
 	for(i = 1; i < l; i++)
