@@ -35,15 +35,15 @@ int solution(int N) {
 int main() {
 	int i;
 	int failed = 0;
-	int any = 1; // ÀÌÀü Å¸ÀÏÀÌ 0ÀÌ ¾Æ´Ñ °æ¿ìÀÇ ¼ö
-	int invalid = 1; // ÀÌÀü Å¸ÀÏÀÌ 0ÀÎ °æ¿ìÀÇ ¼ö
+	int any = 1; // ì´ì „ íƒ€ì¼ì´ 0ì´ ì•„ë‹Œ ê²½ìš°ì˜ ìˆ˜
+	int invalid = 1; // ì´ì „ íƒ€ì¼ì´ 0ì¸ ê²½ìš°ì˜ ìˆ˜
 	for(i = 1; i <= COUNT; i++) {
 		int previous_any = any;
 		int previous_invalid = invalid;
 
-		// ÀÌ¹ø¿¡ 0À» ¾²´Â °æ¿ì + 1À» ¾²´Â °æ¿ì
+		// ì´ë²ˆì— 0ì„ ì“°ëŠ” ê²½ìš° + 1ì„ ì“°ëŠ” ê²½ìš°
 		any = previous_invalid + previous_any;
-		// ÀÌÀü Å¸ÀÏÀÌ 0ÀÌ¸é 1¸¸ ¾µ ¼ö ÀÖÀ½
+		// ì´ì „ íƒ€ì¼ì´ 0ì´ë©´ 1ë§Œ ì“¸ ìˆ˜ ìˆìŒ
 		invalid = previous_any;
 
 		any %= 15746;
@@ -51,13 +51,12 @@ int main() {
 
 		int result = solution(i + 1);
 		if (result != any) {
-			printf("NÀÌ %dÀÎ °æ¿ì ¿À´ä! (Á¤´ä: %d, °á°ú: %d)\n", i, any, result);
+			printf("Nì´ %dì¸ ê²½ìš° ì˜¤ë‹µ! (ì •ë‹µ: %d, ê²°ê³¼: %d)\n", i, any, result);
 			failed = 1;
 		}
 	}
 	if (failed == 0) {
 		puts("Passed all cases!");
 	}
-	return 0;
+	return failed;
 }
-
