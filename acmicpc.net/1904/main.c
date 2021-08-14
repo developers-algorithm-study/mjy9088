@@ -1,23 +1,35 @@
 #include <stdio.h>
 
-int main() {
-	int N, i;
-	scanf("%d", &N);
-	int any = 1; // 이전 타일이 0이 아닌 경우의 수
-	int invalid = 1; // 이전 타일이 0인 경우의 수
-	for(i = 1; i < N; i++) {
-		int previous_any = any;
-		int previous_invalid = invalid;
+#define DIV 15746
 
-		// 이번에 0을 쓰는 경우 + 1을 쓰는 경우
-		any = previous_invalid + previous_any;
-		// 이전 타일이 0이면 1만 쓸 수 있음
-		invalid = previous_any;
+typedef struct
+{
+	int i1, i2, i3, i4;
+} mat2d;
 
-		any %= 15746;
-		invalid %= 15746;
+mat2d mat2d_multiply(mat2d a, mat2d b)
+{
+	return (mat2d){(a.i1 * b.i1 + a.i3 * b.i2) % DIV, (a.i2 * b.i1 + a.i4 * b.i2) % DIV
+				 , (a.i1 * b.i3 + a.i3 * b.i4) % DIV, (a.i2 * b.i3 + a.i4 * b.i4) % DIV};
+}
+
+mat2d mat2d_pow(mat2d a, int b)
+{
+	if(b / 2)
+	{
+		if(b % 2) return mat2d_multiply(a, mat2d_pow(mat2d_multiply(a, a), b / 2));
+		else return mat2d_pow(mat2d_multiply(a, a), b / 2);
 	}
-	printf("%d\n", any);
+	else
+	{
+		return a;
+	}
+}
+
+int main() {
+	int N;
+	scanf("%d", &N);
+	printf("%d", mat2d_pow((mat2d){0, 1, 1, 1}, N).i4);
 	return 0;
 }
 
