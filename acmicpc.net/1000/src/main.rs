@@ -2,8 +2,7 @@ use std::io;
 
 fn main() {
 	let mut line = String::new();
-	let err = io::stdin().read_line(&mut line);
-	debug_assert!(!err.is_err());
+	io::stdin().read_line(&mut line).unwrap();
 
 	let numbers = line
 		.trim()
