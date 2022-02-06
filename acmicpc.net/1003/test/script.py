@@ -6,7 +6,7 @@ cases = json.load(f)
 f.close()
 
 for case in cases:
-    pipe = Popen(['target/debug/acmicpc_1000'],
+    pipe = Popen(['target/debug/acmicpc_1003'],
                  stdin=PIPE, stdout=PIPE, stderr=PIPE)
     pipe.stdin.write(case['input'])
     pipe.stdin.close()
@@ -15,5 +15,8 @@ for case in cases:
     stderr = pipe.stderr.read()
     if stdout != case['output'] or stderr != '':
         print('Failed: case {}'.format(case['name']))
+        print('expected output:\n\t{}'.format(
+            "\n\t".join(case['output'].split('\n'))))
+        print('  your   output:\n\t{}'.format("\n\t".join(stdout.split('\n'))))
         exit()
 print('Passed all cases')
