@@ -1,0 +1,58 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .background {
+      fill: #ECEAE5;
+      width: 100%;
+      height: 100%;
+    }
+
+    .nodes ellipse {
+      fill: #00000008;
+      stroke: #131516;
+    }
+
+    .nodes ellipse.special {
+      stroke: #040;
+      fill: #00FF0008
+    }
+
+    .route * {
+      stroke: #F00;
+      fill: transparent;
+    }
+
+    .route ellipse {
+      fill: #D00;
+    }
+  </style>
+  <rect class="background" />
+  <g class="nodes">
+    <!-- 출발지 -->
+    <ellipse ry="104" rx="105" cy="148" cx="213" class="special" />
+    <ellipse ry="39" rx="43" cy="161" cx="184" />
+    <ellipse ry="23" rx="25" cy="153" cx="260" />
+    <!-- 도착지 -->
+    <ellipse ry="114" rx="111" cy="227" cx="582" class="special" />
+    <ellipse ry="61" rx="61" cy="245" cx="591" class="special" />
+    <!-- 오른쪽 위 -->
+    <ellipse ry="147" rx="149" cy="-2" cx="768" />
+    <!-- 오른쪽 아래 -->
+    <ellipse ry="352" rx="340" cy="652" cx="953" />
+    <ellipse ry="310" rx="280" cy="662" cx="963" />
+    <!-- 아래 왼쪽 -->
+    <ellipse ry="102" rx="98" cy="557" cx="157" />
+    <!-- 아래 가운데 -->
+    <ellipse ry="61" rx="67" cy="507" cx="460" />
+    <!-- 위 가운데 -->
+    <ellipse ry="62" rx="62" cy="101" cx="433" />
+    <!-- 중간 가운데 -->
+    <ellipse ry="79" rx="78" cy="305" cx="387" />
+    <!-- 중간 왼쪽 -->
+    <ellipse ry="78" rx="81" cy="322" cx="115" />
+  </g>
+  <g class="route">
+    <path d="m274,107.5c15,0 91,64 125,84c34,20 162,56 174,52" />
+    <ellipse ry="4" rx="4" cy="107" cx="275" />
+    <ellipse rx="4" ry="4" cy="245" cx="573" />
+  </g>
+</svg>

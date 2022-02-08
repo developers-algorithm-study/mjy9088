@@ -9,11 +9,11 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.py]
+[*.{py,rs}]
 indent_size = 4
 tab_width = 4
 
-[{Makefile,*.{c,h,rs,mk}}]
+[{Makefile,*.{c,h,mk}}]
 indent_size = 4
 tab_width = 4
 indent_style = tab
