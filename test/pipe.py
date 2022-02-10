@@ -1,5 +1,5 @@
 import json
-from subprocess import Popen, PIPE, DEVNULL
+from subprocess import Popen, PIPE
 from typing import TypedDict, List, Tuple, Callable, Optional
 
 
@@ -127,8 +127,12 @@ def _default_result_handler(result: TestResult, index: int) -> bool:
         print('[result] stderr start\n{}\n[result] stderr end'.format(
             _format_line(result.stderr, '[result] stderr\t{}$')))
     if result.error_exit_code:
-        print('\nexpected exit code: {}\n[result] exit code: {}'.format(
-            case['exit_code'], result.exit_code))
+        if 'exit_code' in case:
+            print('\nexpected exit code: {}\n[result] exit code: {}'.format(
+                case['exit_code'], result.exit_code))
+        else:
+            print('\nexpected exit code: {}\n[result] exit code: {}'.format(
+                0, result.exit_code))
     return True
 
 
@@ -158,6 +162,7 @@ def test(**kwargs) -> bool:
             if Popen(task).wait():
                 raise RuntimeError(
                     'Failed to launch task {} ({:?})'.format(index + 1, task))
+    succeeded_all = True
 
     for index, case in enumerate(cases):
         pipe = Popen(popen_params, stdin=PIPE, stdout=PIPE, stderr=PIPE)
@@ -168,6 +173,8 @@ def test(**kwargs) -> bool:
         stderr = pipe.stderr.read().decode(encoding)
         result = TestResult(case, stdout, stderr, exit_code,
                             stdout_comparator, stderr_comparator)
+        if not result.passed:
+            succeeded_all = False
         if result_handler(result, index):
-            return False
-    return True
+            return succeeded_all
+    return succeeded_all
