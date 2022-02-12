@@ -1,0 +1,6 @@
+name: main
+build-type: Simple
+executable:
+  source-dirs: src
+  main: main.hs
+  dependencies: [base]
