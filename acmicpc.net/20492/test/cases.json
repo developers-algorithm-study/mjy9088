@@ -1,0 +1,12 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "10000000\n",
+    "stdout": "7800000 9560000\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "1000\n",
+    "stdout": "780 956\n"
+  }
+]
