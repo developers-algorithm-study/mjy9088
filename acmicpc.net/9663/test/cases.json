@@ -1,0 +1,82 @@
+[
+  {
+    "name": "0x0 Queen",
+    "stdin": "0\n",
+    "stdout": "1\n"
+  },
+  {
+    "name": "1x1 Queen",
+    "stdin": "1\n",
+    "stdout": "1\n"
+  },
+  {
+    "name": "2x2 Queen",
+    "stdin": "2\n",
+    "stdout": "0\n"
+  },
+  {
+    "name": "3x3 Queen",
+    "stdin": "3\n",
+    "stdout": "0\n"
+  },
+  {
+    "name": "4x4 Queen",
+    "stdin": "4\n",
+    "stdout": "2\n"
+  },
+  {
+    "name": "5x5 Queen",
+    "stdin": "5\n",
+    "stdout": "10\n"
+  },
+  {
+    "name": "6x6 Queen",
+    "stdin": "6\n",
+    "stdout": "4\n"
+  },
+  {
+    "name": "7x7 Queen",
+    "stdin": "7\n",
+    "stdout": "40\n"
+  },
+  {
+    "name": "8x8 Queen",
+    "stdin": "8\n",
+    "stdout": "92\n"
+  },
+  {
+    "name": "9x9 Queen",
+    "stdin": "9\n",
+    "stdout": "352\n"
+  },
+  {
+    "name": "10x10 Queen",
+    "stdin": "10\n",
+    "stdout": "724\n"
+  },
+  {
+    "name": "11x11 Queen",
+    "stdin": "11\n",
+    "stdout": "2680\n"
+  },
+  {
+    "name": "12x12 Queen",
+    "stdin": "12\n",
+    "stdout": "14200\n"
+  },
+  {
+    "name": "13x13 Queen",
+    "stdin": "13\n",
+    "stdout": "73712\n"
+  },
+  {
+    "name": "14x14 Queen",
+    "stdin": "14\n",
+    "stdout": "365596\n"
+  },
+  {
+    "name": "15x15 Queen",
+    "stdin": "15\n",
+    "stdout": "2279184\n"
+  }
+]

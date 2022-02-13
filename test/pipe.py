@@ -161,7 +161,7 @@ def test(**kwargs) -> bool:
         for index, task in enumerate(kwargs['prelaunch_tasks']):
             if Popen(task).wait():
                 raise RuntimeError(
-                    'Failed to launch task {} ({:?})'.format(index + 1, task))
+                    'Failed to launch task {} ({})'.format(index + 1, ' '.join(task)))
     succeeded_all = True
 
     for index, case in enumerate(cases):
