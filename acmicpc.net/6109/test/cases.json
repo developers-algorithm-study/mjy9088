@@ -1,0 +1,7 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "83 5\n50\n25\n10\n5\n1\n",
+    "stdout": "159\n"
+  }
+]
