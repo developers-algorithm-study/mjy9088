@@ -1,5 +1,5 @@
 import json
-from subprocess import Popen, PIPE
+from subprocess import run, PIPE
 from typing import TypedDict, List, Tuple, Callable, Optional
 
 
@@ -140,14 +140,6 @@ encoding = 'utf-8'
 
 
 def test(**kwargs) -> bool:
-    """test by compare output
-
-    :param cases: exception type
-    :type
-    :param limit: maximum number of stack frames to show
-    :return: true on no error, false otherwise
-    """
-
     if 'popen_params' not in kwargs:
         raise TypeError('Required parameter popen_params not given')
     popen_params = kwargs['popen_params']
@@ -159,18 +151,16 @@ def test(**kwargs) -> bool:
 
     if 'prelaunch_tasks' in kwargs:
         for index, task in enumerate(kwargs['prelaunch_tasks']):
-            if Popen(task).wait():
+            if run(task).returncode:
                 raise RuntimeError(
                     'Failed to launch task {} ({})'.format(index + 1, ' '.join(task)))
     succeeded_all = True
 
     for index, case in enumerate(cases):
-        pipe = Popen(popen_params, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        pipe.stdin.write(bytes(case['stdin'].encode(encoding)))
-        pipe.stdin.close()
-        exit_code = pipe.wait()
-        stdout = pipe.stdout.read().decode(encoding)
-        stderr = pipe.stderr.read().decode(encoding)
+        result = run(popen_params, stdout=PIPE, stderr=PIPE, input=case['stdin'], encoding=encoding)
+        exit_code = result.returncode
+        stdout = result.stdout
+        stderr = result.stderr
         result = TestResult(case, stdout, stderr, exit_code,
                             stdout_comparator, stderr_comparator)
         if not result.passed:
