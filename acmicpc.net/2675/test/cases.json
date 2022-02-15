@@ -1,0 +1,7 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "2\n3 ABC\n5 /HTP\n",
+    "stdout": "AAABBBCCC\n/////HHHHHTTTTTPPPPP\n"
+  }
+]

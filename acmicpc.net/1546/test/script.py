@@ -8,12 +8,12 @@ sys.path.append(root_path + sep + 'test')
 
 
 def float_comparator(actual: str, expected: str) -> bool:
-    return abs(float(expected) - float(actual)) >= 0.0000000001
+    return abs(float(expected) - float(actual)) >= 0.01
 
 
 if import_module('pipe').test(
     prelaunch_tasks=[['cargo', 'build']],
-    popen_params=sep.join([base_path, 'target', 'debug', 'acmicpc_1008']),
+    popen_params=sep.join([base_path, 'target', 'debug', 'acmicpc_1546']),
     path_to_cases_json=sep.join([base_path, 'test', 'cases.json']),
     stdout_comparator=float_comparator
 ):

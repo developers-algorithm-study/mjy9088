@@ -1,0 +1,17 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "The Curious Case of Benjamin Button\n",
+    "stdout": "6\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": " The first character is a blank\n",
+    "stdout": "6\n"
+  },
+  {
+    "name": "example 3",
+    "stdin": "The last character is a blank \n",
+    "stdout": "6\n"
+  }
+]

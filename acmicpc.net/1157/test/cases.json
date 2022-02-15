@@ -1,0 +1,22 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "Mississipi\n",
+    "stdout": "?\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "zZa\n",
+    "stdout": "Z\n"
+  },
+  {
+    "name": "example 3",
+    "stdin": "z\n",
+    "stdout": "Z\n"
+  },
+  {
+    "name": "example 4",
+    "stdin": "baaa\n",
+    "stdout": "A\n"
+  }
+]

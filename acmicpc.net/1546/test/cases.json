@@ -1,0 +1,42 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "3\n40 80 60\n",
+    "stdout": "75.0\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "3\n10 20 30\n",
+    "stdout": "66.666667\n"
+  },
+  {
+    "name": "example 3",
+    "stdin": "4\n1 100 100 100\n",
+    "stdout": "75.25\n"
+  },
+  {
+    "name": "example 4",
+    "stdin": "5\n1 2 4 8 16\n",
+    "stdout": "38.75\n"
+  },
+  {
+    "name": "example 5",
+    "stdin": "2\n3 10\n",
+    "stdout": "65.0\n"
+  },
+  {
+    "name": "example 6",
+    "stdin": "4\n10 20 0 100\n",
+    "stdout": "32.5\n"
+  },
+  {
+    "name": "example 7",
+    "stdin": "1\n50\n",
+    "stdout": "100.0\n"
+  },
+  {
+    "name": "example 8",
+    "stdin": "9\n10 20 30 40 50 60 70 80 90\n",
+    "stdout": "55.55555555555556\n"
+  }
+]

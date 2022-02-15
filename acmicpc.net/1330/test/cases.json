@@ -1,0 +1,17 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "1 2\n",
+    "stdout": "<\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "10 2\n",
+    "stdout": ">\n"
+  },
+  {
+    "name": "example 3",
+    "stdin": "5 5\n",
+    "stdout": "==\n"
+  }
+]
