@@ -1,0 +1,7 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "13\nbut\ni\nwont\nhesitate\nno\nmore\nno\nmore\nit\ncannot\nwait\nim\nyours\n",
+    "stdout": "i\nim\nit\nno\nbut\nmore\nwait\nwont\nyours\ncannot\nhesitate\n"
+  }
+]

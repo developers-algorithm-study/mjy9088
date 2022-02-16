@@ -1,0 +1,7 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "121\n1231\n12421\n0\n",
+    "stdout": "yes\nno\nyes\n"
+  }
+]
