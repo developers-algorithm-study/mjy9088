@@ -1,0 +1,22 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "2000\n",
+    "stdout": "1\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "1999\n",
+    "stdout": "0\n"
+  },
+  {
+    "name": "2012",
+    "stdin": "2012\n",
+    "stdout": "1\n"
+  },
+  {
+    "name": "1900",
+    "stdin": "1900\n",
+    "stdout": "0\n"
+  }
+]
