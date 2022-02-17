@@ -17,7 +17,7 @@ fn main() {
             "size" => println!("{}", stack.len()),
             "empty" => println!("{}", if stack.len() == 0 { 1 } else { 0 }),
             "top" => println!("{}", stack.last().unwrap_or(&-1)),
-            _ => panic!("Invalud input"),
+            _ => panic!("Invalid input"),
         }
     }
 }

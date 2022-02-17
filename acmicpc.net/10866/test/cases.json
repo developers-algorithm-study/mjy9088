@@ -1,0 +1,7 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "15\npush_back 1\npush_front 2\nfront\nback\nsize\nempty\npop_front\npop_back\npop_front\nsize\nempty\npop_back\npush_front 3\nempty\nfront\n",
+    "stdout": "2\n1\n2\n0\n2\n1\n-1\n0\n1\n-1\n0\n3\n"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "3\n21 Junkyu\n21 Dohyun\n20 Sunyoung\n",
+    "stdout": "20 Sunyoung\n21 Junkyu\n21 Dohyun\n"
+  }
+]
