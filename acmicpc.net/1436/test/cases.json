@@ -1,0 +1,27 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "2\n",
+    "stdout": "1666\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "3\n",
+    "stdout": "2666\n"
+  },
+  {
+    "name": "example 3",
+    "stdin": "6\n",
+    "stdout": "5666\n"
+  },
+  {
+    "name": "example 4",
+    "stdin": "187\n",
+    "stdout": "66666\n"
+  },
+  {
+    "name": "example 5",
+    "stdin": "500\n",
+    "stdout": "166699\n"
+  }
+]
