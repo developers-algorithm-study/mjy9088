@@ -5,7 +5,7 @@
     "stdout": "2\n2\n0\n2\n1\n-1\n0\n1\n-1\n0\n3\n"
   },
   {
-    "name": "example 1",
+    "name": "example 2",
     "stdin": "7\npop\ntop\npush 123\ntop\npop\ntop\npop\n",
     "stdout": "-1\n-1\n123\n123\n-1\n-1\n"
   }
