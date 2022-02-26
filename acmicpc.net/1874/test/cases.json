@@ -1,0 +1,12 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "8\n4\n3\n6\n8\n7\n5\n2\n1\n",
+    "stdout": "+\n+\n+\n+\n-\n-\n+\n+\n-\n+\n+\n-\n-\n-\n-\n-\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "5\n1\n2\n5\n3\n4\n",
+    "stdout": "NO\n"
+  }
+]
