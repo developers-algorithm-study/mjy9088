@@ -1,0 +1,6 @@
+[package]
+name = "acmicpc_25421"
+publish = false
+version = "0.1.0"
+
+[dependencies]

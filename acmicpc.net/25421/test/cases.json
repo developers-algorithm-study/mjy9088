@@ -1,0 +1,17 @@
+[
+  {
+    "name": "example 1",
+    "stdin": "1\n",
+    "stdout": "9\n"
+  },
+  {
+    "name": "example 2",
+    "stdin": "2\n",
+    "stdout": "39\n"
+  },
+  {
+    "name": "example 3",
+    "stdin": "100\n",
+    "stdout": "736753518\n"
+  }
+]
